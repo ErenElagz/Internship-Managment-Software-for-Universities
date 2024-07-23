@@ -24,8 +24,9 @@ function initDatabase() {
 			intern_rejected_days INTEGER,
 			intern_mb BOOLEAN DEFAULT 1,
 			intern_re BOOLEAN DEFAULT 1,
-			intern_dsy BOOLEAN DEFAULT 1
-		)`,
+			intern_dsy BOOLEAN DEFAULT 1,
+			intern_cancelled BOOLEAN DEFAULT 0
+			)`,
 		);
 	});
 }
@@ -74,8 +75,9 @@ function addInternship(formData) {
 			intern_rejected_days,
 			intern_mb,
 			intern_re,
-			intern_dsy
-		) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+			intern_dsy,
+			intern_cancelled
+		) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
 		);
 
 		stmt.run(
@@ -96,6 +98,7 @@ function addInternship(formData) {
 			formData.intern_mb,
 			formData.intern_re,
 			formData.intern_dsy,
+			formData.intern_cancelled,
 			function (err) {
 				if (err) {
 					reject(err);
@@ -141,7 +144,8 @@ function updateIntern(record, id) {
 			intern_rejected_days = ?,
 			intern_mb = ?,
 			intern_re = ?,
-			intern_dsy = ?
+			intern_dsy = ?,
+			intern_cancelled = ?
 			WHERE id = ?`,
 		);
 
@@ -163,6 +167,7 @@ function updateIntern(record, id) {
 			record.intern_mb,
 			record.intern_re,
 			record.intern_dsy,
+			record.intern_cancelled,
 			id,
 			function (err) {
 				if (err) {

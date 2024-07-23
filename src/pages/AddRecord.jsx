@@ -26,6 +26,7 @@ export default function AddRecord() {
 		intern_mb: false,
 		intern_re: false,
 		intern_dsy: false,
+		intern_cancelled: false,
 	});
 
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -90,6 +91,7 @@ export default function AddRecord() {
 							name="companyName"
 							value={formData.companyName}
 							onChange={handleChange}
+							
 						/>
 						<InputField
 							label="Company Industry"
@@ -167,7 +169,7 @@ export default function AddRecord() {
 					<h2 className="text-gray-600 text-3xl font-bold mb-3 mt-10">
 						Validation
 					</h2>
-					<div className="grid grid-cols-3 gap-4">
+					<div className="grid grid-cols-4 gap-4">
 						<label className="flex items-center gap-4 align-center">
 							<span className="ml-3 text-xl font-semibold">
 								Offical Document
@@ -198,6 +200,17 @@ export default function AddRecord() {
 								type="checkbox"
 								name="intern_dsy"
 								checked={formData.intern_dsy}
+								onChange={handleChange}
+							/>
+						</label>
+						<label className="flex items-center gap-4 align-center">
+							<span className="ml-3 text-xl font-semibold">
+								Cancelled Internship
+							</span>
+							<input
+								type="checkbox"
+								name="intern_cancelled"
+								checked={formData.intern_cancelled}
 								onChange={handleChange}
 							/>
 						</label>

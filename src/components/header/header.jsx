@@ -8,7 +8,7 @@ export default function Header() {
 				<img
 					src="https://www.hitit.edu.tr/images/HititLogoYeni.svg"
 					alt="Logo"
-					width="200"
+					width="160"
 					height="100"
 				/>
 			</a>

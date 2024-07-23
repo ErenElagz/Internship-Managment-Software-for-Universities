@@ -1,6 +1,5 @@
 export const industries = [
     { label: "Computer Engineering", value: "computer_engineering" },
-    { label: "Software Engineering", value: "software_engineering" },
     { label: "Information Technology", value: "information_technology" },
     { label: "Cybersecurity", value: "cybersecurity" },
     { label: "Data Science", value: "data_science" },
@@ -9,12 +8,11 @@ export const industries = [
     { label: "Game Development", value: "game_development" },
     { label: "Artificial Intelligence", value: "artificial_intelligence" },
     { label: "Robotics", value: "robotics" },
-    { label: "Information Systems", value: "information_systems" },
-    { label: "Cloud Computing", value: "cloud_computing" },
-    { label: "Machine Learning", value: "machine_learning" },
-    { label: "Embedded Systems", value: "embedded_systems" },
-    { label: "Virtual Reality", value: "virtual_reality" },
-    { label: "Augmented Reality", value: "augmented_reality" },
-    { label: "Information Security", value: "information_security" },
-    { label: "Other", value: "other" }
+    { label: "Government", value: "government" },
+    { label: "Municipality", value: "municipality" },
+    { label: "University", value: "university" },
+    { label: "Automative Industy", value: "automative" },
+    { label: "Defence Industy", value: "defence_industry" },
+    { label: "Government", value: "government" },
+    { label: "Other", value: "other" },
 ];

@@ -9,6 +9,7 @@ const InputField = React.memo(
     type = "text",
     fullWidth = false,
     options = [],
+    
   }) => {
     return (
       <div className={fullWidth ? "col-span-2" : ""}>

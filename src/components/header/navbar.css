@@ -8,7 +8,7 @@
 .navbar-links {
 	list-style: none;
 	display: flex;
-	gap: 32px;
+	gap: 48px;
 }
 
 .navbar-links li {

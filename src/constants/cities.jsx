@@ -80,5 +80,6 @@ export const cities = [
     { label: "Yalova", value: "Yalova", lat: 40.6550, lon: 29.2769 },
     { label: "Yozgat", value: "Yozgat", lat: 39.8200, lon: 34.8044 },
     { label: "Zonguldak", value: "Zonguldak", lat: 41.4564, lon: 31.7987 },
+    { label: "Azerbaycan", value: "Azerbaycan", lat: 40.4093, lon: 49.8671 },
     { label: "Erasmus", value: "Erasmus", lat: 50.8476, lon: 4.3572 }
 ];

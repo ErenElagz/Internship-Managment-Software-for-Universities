@@ -155,9 +155,11 @@ export default function UpdateRecord() {
 					<h2 className="text-gray-600 text-3xl font-bold mb-3 mt-10">
 						Documents
 					</h2>
-					<div className="grid grid-cols-3 gap-4">
+					<div className="grid grid-cols-4 gap-4">
 						<label className="flex items-center gap-4 align-center">
-							<span className="ml-3 text-xl font-semibold">Official Document</span>
+							<span className="ml-3 text-xl font-semibold">
+								Official Document
+							</span>
 							<input
 								type="checkbox"
 								name="intern_re"
@@ -166,8 +168,10 @@ export default function UpdateRecord() {
 							/>
 						</label>
 						<label className="flex items-center gap-4 align-center">
-						<span className="ml-3 text-xl font-semibold">Engineering Certificate</span>
-						<input
+							<span className="ml-3 text-xl font-semibold">
+								Engineering Certificate
+							</span>
+							<input
 								type="checkbox"
 								name="intern_mb"
 								checked={record?.intern_mb || false}
@@ -175,11 +179,24 @@ export default function UpdateRecord() {
 							/>
 						</label>
 						<label className="flex items-center gap-4 align-center">
-							<span className="ml-3 text-xl font-semibold">Other Documents</span>
+							<span className="ml-3 text-xl font-semibold">
+								Other Documents
+							</span>
 							<input
 								type="checkbox"
 								name="intern_dsy"
 								checked={record?.intern_dsy || false}
+								onChange={handleChange}
+							/>
+						</label>
+						<label className="flex items-center gap-4 align-center">
+							<span className="ml-3 text-xl font-semibold">
+								Cancelled Internship
+							</span>
+							<input
+								type="checkbox"
+								name="intern_cancelled"
+								checked={record?.intern_cancelled || false}
 								onChange={handleChange}
 							/>
 						</label>

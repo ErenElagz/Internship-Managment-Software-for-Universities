@@ -113,7 +113,7 @@ export default function TablePage() {
 								<td className="px-5 py-5 border-b  text-sm">
 									<span className="inline-flex bg-purple-100 text-purple-800 text-s font-semibold px-2.5 py-0.5 rounded">
 										{intern.intern_start_date}
-									</span>{" "}
+									</span>
 									<span className="inline-flex bg-orange-100 text-orange-800 text-s font-semibold px-2.5 py-0.5 rounded">
 										{intern.intern_end_date}
 									</span>
@@ -121,12 +121,15 @@ export default function TablePage() {
 								<td className="px-5 py-5 border-b  text-sm">
 									<span className="inline-flex bg-green-100 text-green-800 text-s font-semibold px-2.5 py-0.5 rounded">
 										{intern.intern_re ? "RE " : null}
-									</span>{" "}
-									<span className="inline-flex bg-red-100 text-red-800 text-s font-semibold px-2.5 py-0.5 rounded">
+									</span>
+									<span className="inline-flex bg-orange-100 text-red-800 text-s font-semibold px-2.5 py-0.5 rounded">
 										{intern.intern_mb ? "MB " : null}
-									</span>{" "}
+									</span>
 									<span className="inline-flex bg-blue-100 text-blue-800 text-s font-semibold px-2.5 py-0.5 rounded">
 										{intern.intern_dsy ? "DSY " : null}
+									</span>
+									<span className="inline-flex bg-red-100 text-red-800 text-s font-semibold px-2.5 py-0.5 rounded">
+										{intern.intern_cancelled ? "Cancelled " : null}
 									</span>
 								</td>
 								<td className="px-5 py-5 border-b border-gray-200  text-sm flex items-center space-x-3">
